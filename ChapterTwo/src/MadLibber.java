@@ -1,9 +1,9 @@
 
 /**
  * Gets words from user to fill in the gaps in a story.
- * @author
- * @version
- * @date
+ * @author Braden Best
+ * @version 0.1
+ * @date 2018-09-16
  *
  */
 public class MadLibber {
@@ -26,8 +26,21 @@ public class MadLibber {
 	 *    Be sure to double check the spacing on your output!
 	 */
 	public static void main(String[] args) {
-		// TODO Write code here.
+		String[] adjectives = {"moist", "salty"};
+		String[] nouns = {"goose", "cult", "Kool-aid"};
+		String number = "a billion";
+		String verb = "drink";
+		String bodypart = "pancreas";
+		
+		madlib(adjectives, nouns, number, verb, bodypart);
 
+	}
+	
+	private static void madlib(String[] adjectives, String[] nouns, String number, String verb, String bodypart){
+		System.out.printf("Hey baby, I guarantee there'll be %s times. I guarantee that at some\n", adjectives[0]);
+		System.out.printf("%s, %s or both of us is gonna want to get out of this %s. But\n", nouns[0], number, nouns[1]);
+		System.out.printf("I also guarantee that if I don't ask you to be %s, I'll %s it for the\n", adjectives[1], verb);
+		System.out.printf("rest of my %s, because I know in my %s, you're the only one for me.\n", nouns[2], bodypart);
 	}
 
 }

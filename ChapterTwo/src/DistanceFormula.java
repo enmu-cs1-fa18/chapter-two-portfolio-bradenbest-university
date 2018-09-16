@@ -2,9 +2,9 @@
 
 /**
  * Calculates and prints the distance between two points.
- * @author
- * @version
- * @date
+ * @author Braden Best
+ * @version 0.1
+ * @date 2018-09-16
  *
  */
 public class DistanceFormula {
@@ -22,7 +22,19 @@ public class DistanceFormula {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//TODO Write Code.
+		int[] pair1 = {6, 7};
+		int[] pair2 = {-3, -2};
+		double result = find_distance(pair1, pair2);
+		
+		System.out.printf("distance = %f\nrounded  = %.2f", result, result);
+		// cool, extra credit.
+	}
+	
+	public static double find_distance(int[] pair1, int[] pair2){
+		int diffx = pair1[0] - pair2[0];
+		int diffy = pair1[1] - pair2[1];
+		
+		return Math.sqrt(Math.pow(diffx, 2) + Math.pow(diffy, 2));
 	}
 
 }
